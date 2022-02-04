@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Inscription en licence</h1>
+    <form action="validation.html" method="POST">
+
+    <div class="information">
+      <h3>Information Personnel</h3>
+    
+        <div class="input">
+          <label>Votre nom</label>
+          <input type="text" placeholder="votre nom ?" />
+        </div>
+        <div class="input">
+          <label> Votre prenom</label>
+          <input type="text" placeholder="votre prenom? " />
+        </div>
+        <div class="input">
+          <label> Votre age</label>
+          <input type="number" placeholder="votre age " />
+        </div>
+        <div class="input">
+          <label> Votre adresse</label>
+          <input type="text" placeholder="votre adresse " class="adresse" />
+        </div>
+
+        <div class="input">
+          <label>Mot de passe</label>
+          <input type="password" required />
+        </div>
+
+        <div class="input">
+          <label>Retaper votre mot de passe</label>
+          <input type="password" required />
+        </div>
+
+        <div class="input">
+          <label>Email</label>
+          <input type="email" />
+        </div>
+
+        <div class="input">
+          <label>Url </label>
+          <input type="text" />
+        </div>
+   
+    </div>
+    <div class="gestion">
+      <h3>Gestion de groupe et des options</h3>
+      <div class="input">
+        <label for="groupe">Groupe </label>
+        <div>
+          <input
+            type="radio"
+            id="groupe1"
+            name="groupe"
+            value="groupe1"
+            checked
+          />
+          <label for="groupe1">Groupe 1</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="groupe2"
+            name="groupe"
+            value="groupe2"
+            checked
+          />
+          <label for="groupe1">Groupe 2</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="groupe3"
+            name="groupe"
+            value="groupe3"
+            checked
+          />
+          <label for="groupe1">Groupe 3</label>
+        </div>
+      </div>
+
+      <div class="input">
+        <label>Numero de carte d'étudiant</label>
+
+        <input type="text" placeholder="Numéro de carte d'étudiants" />
+      </div>
+
+      <div class="input">
+        <label for="options">Choisissez les options que vous désirez </label>
+        <select name="options">
+          <option value="">--Please choose an option</option>
+          <option>Android</option>
+          <option>.Net</option>
+          <option>HTML5</option>
+          <option>Flex</option>
+        </select>
+      </div>
+     <div class="input">
+       <label>Date</label>
+       <input type="date" value="2022-04-02">
+     </div>
+
+
+    </div>
+
+    <div class="input">
+      <label>Put your text here</label>
+      <input type="text" pattern="[I][N][S][A][T][0-9]{4}" required>
+    </div>
+
+
+    <div class="buttons">
+      <button type="submit" >Valider</button>
+      <button onClick="window.location.reload();">Reunitiliser</button>
+    </div>
+    </form>
+  </body>
+</html>

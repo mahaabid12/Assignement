@@ -1,0 +1,22 @@
+.nav{
+    list-style-type: none;
+   margin:0; 
+   padding:0; 
+    
+}
+.element{
+    display :inline; 
+    margin-left: 50px;
+}
+
+#top{
+    margin-bottom:50%
+}
+
+#service1{
+    margin-bottom: 50%;
+}
+
+#service2{
+    margin-bottom: 50%;
+}
